@@ -15,13 +15,13 @@ Template Name: Home Page
       </div>
     </div>
 
-    <div class="row">
+    
     	<div class="col-xs-12">
     		<a href="<?php the_permalink() ?>">
-	      		<?php the_content(); ?>
+	      		
 	      	</a>
     	</div>
-    </div>
+   
 
 
 <?php endwhile; endif; ?>

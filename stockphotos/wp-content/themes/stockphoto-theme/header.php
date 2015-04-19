@@ -26,7 +26,7 @@
 })(jQuery);
 </script><!--This right here makes the nav appear on scroll!!!-->
 
-  <div class="container">
+  <div class="container-fluid">
   	<div class="navigationBar col-xs-12">
 			<ul class="navigationList">
 				<li><a <?php if(strpos($_SERVER['REQUEST_URI'], 'home')) echo 'class="active"'; ?> href="<?php bloginfo('url'); ?>/home ">Home</a></li>
