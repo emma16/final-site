@@ -30,11 +30,12 @@
   	<div class="navigationBar col-xs-12">
 			<ul class="navigationList">
 				<li><a <?php if(strpos($_SERVER['REQUEST_URI'], 'home')) echo 'class="active"'; ?> href="<?php bloginfo('url'); ?>/home ">Home</a></li>
-				<li><a <?php if(strpos($_SERVER['REQUEST_URI'], 'about')) echo 'class="active"'; ?> href="<?php bloginfo('url'); ?>/about">About</a></li>
-				<li><a <?php if(strpos($_SERVER['REQUEST_URI'], 'share')) echo 'class="active"'; ?> href="<?php bloginfo('url'); ?>/share">Share</a></li>
-				<li><a <?php if(strpos($_SERVER['REQUEST_URI'], 'shine')) echo 'class="active"'; ?> href="<?php bloginfo('url'); ?>/shine">Shine On</a></li>
+				<li><a <?php if(strpos($_SERVER['REQUEST_URI'], 'about')) echo 'class="active"'; ?> href="<?php bloginfo('url'); ?>/info">Info</a></li>
+				<li><a <?php if(strpos($_SERVER['REQUEST_URI'], 'share')) echo 'class="active"'; ?> href="<?php bloginfo('url'); ?>/checkout">Checkout</a></li>
+				<li><a <?php if(strpos($_SERVER['REQUEST_URI'], 'shine')) echo 'class="active"'; ?> href="<?php bloginfo('url'); ?>/contact">Contact</a></li>
 				<li><a <?php if(strpos($_SERVER['REQUEST_URI'], 'editor')) echo 'class="active"'; ?> href="<?php bloginfo('url'); ?>/editor">Editor's Picks</a></li>
-				<li><form style="display: inline-block;" action="<?php bloginfo('url'); ?>/search" method="get"><input type="text" name="query" width="200" class="form-control" placeholder="Search"><button type="submit" class="btn btn-default searchButton">Go</button></form></li>
+				<li><form style="display: inline-block;" action="<?php bloginfo('url'); ?>/search" method="get"><input type="text" name="query" width="200" class="form-control" placeholder="Start Photo Search..."><button type="submit" class="btn btn-default searchButton">Go</button></form></li>
 			</ul>
 		</div>
+
 

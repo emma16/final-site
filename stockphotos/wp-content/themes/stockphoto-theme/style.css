@@ -3,13 +3,7 @@
   Version: 1
   Author: Emma Zakarian
 */
-body{
-	overflow-x: hidden;
-}
 
-p {
-	margin: 20;
-}
 
 img{
 	float: left;
