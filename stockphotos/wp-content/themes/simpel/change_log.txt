@@ -1,0 +1,10 @@
+	
+
+	— — — ——  Change Log for Simpel Wordpress Theme  — — — —
+
+		v1.0.7	- Initial Release
+
+		v1.1	- 1. Fixed a compatibility issue for previous versions 
+			  2. Updated Font-Awesome
+
+		v1.2	- 1. Added an option to disable the featured image on post pages.

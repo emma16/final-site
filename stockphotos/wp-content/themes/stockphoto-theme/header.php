@@ -6,17 +6,18 @@
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>">
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/bootstrap.min.js"></script>
 
 	<?php wp_head();?>
 </head>
 <body>
 
-    	<script type="text/javascript">
+<script type="text/javascript">
 (function($) {          
     $(document).ready(function(){                    
         $(window).scroll(function(){                          
-            if ($(this).scrollTop() > 200) {
+            if ($(this).scrollTop() > 250) {
                 $('.navigationBar').fadeIn(500);
             } else {
                 $('.navigationBar').fadeOut(500);
@@ -29,12 +30,12 @@
   <div class="container-fluid">
   	<div class="navigationBar col-xs-12">
 			<ul class="navigationList">
-				<li><a <?php if(strpos($_SERVER['REQUEST_URI'], 'home')) echo 'class="active"'; ?> href="<?php bloginfo('url'); ?>/home ">Home</a></li>
-				<li><a <?php if(strpos($_SERVER['REQUEST_URI'], 'about')) echo 'class="active"'; ?> href="<?php bloginfo('url'); ?>/info">Info</a></li>
-				<li><a <?php if(strpos($_SERVER['REQUEST_URI'], 'share')) echo 'class="active"'; ?> href="<?php bloginfo('url'); ?>/checkout">Checkout</a></li>
-				<li><a <?php if(strpos($_SERVER['REQUEST_URI'], 'shine')) echo 'class="active"'; ?> href="<?php bloginfo('url'); ?>/contact">Contact</a></li>
-				<li><a <?php if(strpos($_SERVER['REQUEST_URI'], 'editor')) echo 'class="active"'; ?> href="<?php bloginfo('url'); ?>/editor">Editor's Picks</a></li>
-				<li><form style="display: inline-block;" action="<?php bloginfo('url'); ?>/search" method="get"><input type="text" name="query" width="200" class="form-control" placeholder="Start Photo Search..."><button type="submit" class="btn btn-default searchButton">Go</button></form></li>
+				<li class="smallLogo"><img src="<?php bloginfo('url');?>/wp-content/uploads/2015/05/logo2.png" alt=""></li>
+				<li><a <?php if(strpos($_SERVER['REQUEST_URI'], ' ')) echo 'class="active"'; ?> href="<?php bloginfo('url'); ?> ">home</a></li>
+				<li><a <?php if(strpos($_SERVER['REQUEST_URI'], 'about')) echo 'class="active"'; ?> href="<?php bloginfo('url'); ?>/info">info</a></li>
+				<li><a <?php if(strpos($_SERVER['REQUEST_URI'], 'share')) echo 'class="active"'; ?> href="<?php bloginfo('url'); ?>/checkout">checkout</a></li>
+				<li><a <?php if(strpos($_SERVER['REQUEST_URI'], 'shine')) echo 'class="active"'; ?> href="<?php bloginfo('url'); ?>/contact">contact</a></li>
+				<li><form style="display: inline-block;" action="<?php bloginfo('url'); ?>/search" method="get"><input type="text" name="query" width="200" class="form-control" placeholder="search now"><button type="submit" class="btn btn-default searchButton">Go</button></form></li>
 			</ul>
 		</div>
 
