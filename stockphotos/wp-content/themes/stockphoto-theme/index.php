@@ -1,8 +1,22 @@
-<?php get_header(); 
+<?php get_header ();
 /*
 Template Name: Home Page
 */
 ?>
+
+<script type="text/javascript">
+(function($) {          
+    $(document).ready(function(){                    
+        $(window).scroll(function(){                          
+            if ($(this).scrollTop() > 250) {
+                $('.scrollIn').fadeIn(500);
+            } else {
+                $('.scrollIn').fadeOut(500);
+            }
+        });
+    });
+})(jQuery);
+</script><!--This right here makes the nav appear on scroll!!!-->
 
     	
 
@@ -31,13 +45,15 @@ $(function() {
 
 </div>
 
+
+
 <div class="col-xs-4">
 	<div id="postContent">
 
 <?php 
-	$mountains = new WP_Query(['post_type'=>'post', 'category_name' => 'mountains']);
+	$row1 = new WP_Query(['post_type'=>'post', 'category_name' => 'row1']);
 
-	if ($mountains->have_posts()) : while ($mountains->have_posts()) : $mountains->the_post(); ?>
+	if ($row1->have_posts()) : while ($row1->have_posts()) : $row1->the_post(); ?>
 
 		<?php the_content(); ?>
 			
@@ -54,9 +70,9 @@ $(function() {
 	<div id="postContent">
 
 <?php 
-	$ocean = new WP_Query(['post_type'=>'post', 'category_name' => 'ocean']);
+	$row2 = new WP_Query(['post_type'=>'post', 'category_name' => 'row2']);
 
-	if ($ocean->have_posts()) : while ($ocean->have_posts()) : $ocean->the_post(); ?>
+	if ($row2->have_posts()) : while ($row2->have_posts()) : $row2->the_post(); ?>
 
 		<?php the_content(); ?>
 
@@ -73,9 +89,9 @@ $(function() {
 	<div id="postContent">
 
 <?php 
-	$field = new WP_Query(['post_type'=>'post', 'category_name' => 'field']);
+	$row3 = new WP_Query(['post_type'=>'post', 'category_name' => 'row3']);
 
-	if ($field->have_posts()) : while ($field->have_posts()) : $field->the_post(); ?>
+	if ($row3->have_posts()) : while ($row3->have_posts()) : $row3->the_post(); ?>
 
 		<?php the_content(); ?>
 
