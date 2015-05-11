@@ -1,11 +1,7 @@
 	<div id="footer">
 		<?php wp_footer(); ?>
 
-			<div class="col-xs-4 copyright">
-				© 2015 Emma Zakarian All Rigths Reserved
-			</div>
-
-			<div class="col-xs-3 col-xs-offset-1 social">
+			<div class="col-xs-12 social">
 				<ul>
 				<li><a href="http://facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
 				<li><a href="http://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
@@ -13,9 +9,10 @@
 				</ul>
 			</div>
 
-			<div class="col-xs-4 address">
-				PO Box 401 Los Angeles CA 90012
+			<div class="col-xs-12 copyright">
+				© 2015 PICTURESQUE All Rights Reserved
 			</div>
+			
 		</div>
       
 </div><!-- x content -->

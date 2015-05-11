@@ -3,6 +3,17 @@
 Template Name: Search Page
 */
 ?>
+<div class="navigationBar col-xs-12" style="display: block;">
+			<ul class="navigationList">
+				<li class="smallLogo"><a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('url');?>/wp-content/uploads/2015/05/logo2.png" alt=""></a></li>
+				<li><a href="<?php bloginfo('url');?> ">home</a></li>
+				<li><a href="<?php bloginfo('url');?>/info">info</a></li>
+				<li><a href="<?php bloginfo('url');?>/checkout">checkout</a></li>
+				<li><a href="<?php bloginfo('url');?>/contact">contact</a></li>
+				<li><form style="display: inline-block;" action="<?php bloginfo('url');?>/search" method="get"><input type="text" name="query" width="200" class="form-control" placeholder="search now"><button type="submit" class="btn btn-default searchButton">Go</button></form></li>
+			</ul>
+		</div>
+
 <div class="navigationBar col-xs-12">
 			<ul class="navigationList">
 				<li class="smallLogo"><img src="<?php bloginfo('url');?>/wp-content/uploads/2015/05/logo2.png" alt=""></li>
@@ -23,7 +34,11 @@ Template Name: Search Page
 	else
 		$the_query=false; ?>
 
-<?php echo "results for $the_query" ?>
+<div class="col-xs-12 searchTitle">	
+
+	<h2><?php echo "results for $the_query" ?></h2>
+
+</div>
 
 	<?php
 
@@ -48,8 +63,11 @@ Template Name: Search Page
 		</div>
 
 	<?php endwhile; else: ?>
-	    <p>Sorry, there are no posts that match your criteria. Please try your search again.</p>
+	    <h2>Sorry, there are no photos that match your criteria.<br>Please try your search again or browse the <a href="http://localhost:8888/stockphotos#postContent ">collection</a>.</h2>
 	<?php endif; ?>
 
 	</div>
+	<br>
+	<br>
+	<br>
 	<?php get_footer();?>

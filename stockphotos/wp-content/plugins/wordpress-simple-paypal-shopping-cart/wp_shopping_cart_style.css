@@ -22,7 +22,13 @@ text-align: left;
 }
 .shopping_cart .wspsc_cart_qty_th, .shopping_cart .wspsc_cart_price_th{
 text-align: center;
+display:none;
 }
+
+.shopping_cart .wspsc_cart_qty_th form {
+	display:none;
+}
+
 .shopping_cart .wp_cart_item_thumbnail{
 margin-right: 10px;
 }
@@ -34,9 +40,22 @@ float: left;
 .wp_cart_remove_item_form input[type="image"]{
 border: none;
 }
+
 .wp-cart-button-form input{
-width: auto !important;
+  width: auto !important;
+  color: black;
+  border: black;
+  border-style: solid;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 18px;
+  border-width: 1px;
+  background: none;
+  text-align: center;
 }
+.wp-cart-button-form input.active{
+	display:none;
+}
+
 .wp_cart_checkout_button:hover{
 opacity:0.7;
 }
@@ -72,7 +91,7 @@ max-width:100%;
 padding:10px 15px;	
 }
 .wp_cart_product_name{
-color: #525351;
+color: black;
 font-size: 16px;
 font-weight: bold;
 line-height: 20px;

@@ -9,59 +9,34 @@ hr{
 }
 
 p{
-	font-family: "Champagne & Limousines";
+	font-family: 'Lato', sans-serif; font-weight: 300;
 	text-align: center;
 	color: black;
 	font-size: 18px;
-	letter-spacing: 5px;
-	padding-left: 5px;
-	padding-right: 5px;
+	letter-spacing: 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+h1{
+	font-family: 'Lato', sans-serif; font-weight: 300;
+	text-align: center;
 }
 
 h2{
+	padding-bottom: 20px;
+	font-family: 'Lato', sans-serif; font-weight: 300;
 	text-align: center;
 }
 
-body {
-  position: relative;
-}
-
-a {
-	text-decoration: none;
-}
-
-.container-fluid{
-	padding-left: 0;
-	padding-right: 0;
-}
-
-.frontCover{
-	text-align: center;
-	background: url(http://localhost:8888/stockphotos/wp-content/uploads/2015/05/cover1.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  margin-bottom: 50px;
-  padding-bottom: 100px;
-
-}
-
-.row1{
-	text-align: center;
-	background: url(http://localhost:8888/stockphotos/wp-content/uploads/2015/05/info1.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  margin-bottom: 50px;
-  padding-bottom: 500px;
-  padding-top: 200px;
-
-}
-
-.logo{
-	padding-top: 200px;
+h3{
+	font-family: "Bodoni 72";
+	  font-style: italic;
+	  letter-spacing: 5px;
+	color:white;
+	font-size: 40px;
 }
 
 h4 {
@@ -94,6 +69,61 @@ h4 a:visited {
 	color:#dbc8a9;
 }
 
+body {
+  position: relative;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container-fluid{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.frontCover{
+	text-align: center;
+	background: url(http://localhost:8888/stockphotos/wp-content/uploads/2015/05/cover1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 50px;
+  padding-bottom: 100px;
+
+}
+
+.row1{
+	text-align: center;
+	background: url(http://localhost:8888/stockphotos/wp-content/uploads/2015/04/9f.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 50px;
+  padding-bottom: 500px;
+  padding-top: 200px;
+
+}
+
+.row2{
+	text-align: center;
+	background: url(http://localhost:8888/stockphotos/wp-content/uploads/2015/05/contact.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 50px;
+  padding-bottom: 500px;
+  padding-top: 200px;
+
+}
+
+.logo{
+	padding-top: 200px;
+}
+
 #postContent img{
 	max-height: 100%;
 	width: 450px;
@@ -112,6 +142,8 @@ h4 a:visited {
 #postContent img:hover{
 	-webkit-filter: brightness(40%%);
 }
+
+/************************************nav bar style *******************************/
 
 #menu {
 	position:fixed;
@@ -145,7 +177,7 @@ h4 a:visited {
 }
 
 .navigationList li a{
-	font-family:"Libel Suit";
+	font-family: 'Fjalla One', sans-serif;
 	font-size: 14px;
 	padding: 5px;
 	color:white;
@@ -169,10 +201,52 @@ h4 a:visited {
 
 }
 
+/***************** single page custom button style **********************/
+
+.singlePage ul{
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+.singlePage li
+{
+	display: inline;
+	list-style-type: none;
+	margin:0 50px 20px 0;
+	font-weight: bold;
+
+}
+
+.singlePage li a{
+	border-style: solid;
+	border-width: 1px;
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 14px;
+	padding: 5px;
+	color:black;
+	text-decoration: none;
+	font-weight: lighter;
+	letter-spacing: 0px;
+	text-align: center;
+	
+}
+
+.singlePage li a:hover{
+	border-style: solid;
+	border-width: 1px;
+	color: #dbc8a9;
+}
+
+
+
 .smallLogo img{
 	width: 7%;
     height: 7%;
     margin-top: -16px;
+}
+
+li.smallLogo a:hover{
+	border:none;
 }
 
 .form-control {
@@ -180,7 +254,7 @@ h4 a:visited {
 	width: 150px;
 	height: 30px;
 	border-color: black;
-	font-family: "Libel Suit";
+	font-family: 'Fjalla One', sans-serif;
 	letter-spacing:3px;
 
 }
@@ -207,7 +281,7 @@ h4 a:visited {
 	color: black;
 	font-size: 30px;
 	text-align: center;
-	margin-right: 10px;
+	margin-right: 25px;
 }
 
 .social>ul li a i:hover {
@@ -216,26 +290,50 @@ h4 a:visited {
 
 .social{
 	padding-top: 10px;
+	text-align: center;
 }
+
 
 /***************************** footer style **************************************/
 
+#footer{
+	
+	margin-top: 90px;
+}
+
+
 .copyright {
 	margin-top: 15px;
+	margin-bottom: 30px;
 	color: black;
 	text-align: center;
-	font-family: ‘American Typewriter’, ‘Courier New’, Courier, Monaco, mono;
-	font-size: 14px;
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 16px;
+	letter-spacing: 2px;
 	
 }
 
-.address {
-	margin-top: 15px;
-	color:black;
+/***************************** single page style ************************************/
+
+.singlePage{
+	margin-top: 100px;
 	text-align: center;
-	font-family: ‘American Typewriter’, ‘Courier New’, Courier, Monaco, mono;
-	font-size: 14px;
 }
 
+/***************************** checkout page***************************************/
+
+.checkoutPage{
+	margin-top: 100px;
+	padding-left: 100px;
+	padding-right: 300px;
+}
+
+.searchTitle{
+	margin-top: 100px;
+}
+
+.contact1{
+	padding-bottom: 50px;
+}
 
 
